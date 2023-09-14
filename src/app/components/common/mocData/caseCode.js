@@ -1,9 +1,9 @@
 export const caseCode = [
-    {name: "0201", value: "0201"},
-    {name: "0402", value: "0402"},
-    {name: "0603", value: "0603"},
-    {name: "0805", value: "0805"},
-    {name: "1206", value: "1206"},
-    {name: "1210", value: "1210"},
-    {name: "1812", value: "1812"}
+    {label: "case 0201", value: "0201"},
+    {label: "case 0402", value: "0402"},
+    {label: "case 0603", value: "0603"},
+    {label: "case 0805", value: "0805"},
+    {label: "case 1206", value: "1206"},
+    {label: "case 1210", value: "1210"},
+    {label: "case 1812", value: "1812"}
 ];

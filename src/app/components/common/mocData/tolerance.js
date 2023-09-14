@@ -1,6 +1,6 @@
 export const tolerance = [
-    {name: "±1%", value: "F"},
-    {name: "±5%", value: "J"},
-    {name: "±10%", value: "K"},
-    {name: "±20%", value: "M"}
+    {label: "±1%", value: "F"},
+    {label: "±5%", value: "J"},
+    {label: "±10%", value: "K"},
+    {label: "±20%", value: "M"}
 ];

@@ -1,5 +1,5 @@
 export const dielectric = [
-    {name: "X5R", value: "X5R"},
-    {name: "X7R", value: "X7R"},
-    {name: "NPO (COG)", value: "NPO"}
+    {label: "X5R", value: "X5R"},
+    {label: "X7R", value: "X7R"},
+    {label: "NPO (COG)", value: "NPO"}
 ]

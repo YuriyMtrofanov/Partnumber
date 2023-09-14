@@ -21,10 +21,9 @@ const InputForm = () => {
             ...prevState,
             [target.name]: target.value
         }));
-        console.log(target);
     };
     useEffect(() => {
-        console.log(inputData);
+        console.log("inputData: ", inputData);
     }, [inputData]);
 
     const onSubmit = (event) => {
@@ -54,6 +53,7 @@ const InputForm = () => {
                     label = "Тип диэлектрика"
                     defaultOption="Выбрать из списка..."
                     value = {inputData.dielectric}
+                    onChange={handleChange}
                     options={dielectric}
                 />
                 <Select
@@ -62,7 +62,7 @@ const InputForm = () => {
                     defaultOption="Выбрать из списка..."
                     value = {inputData.voltage}
                     onChange={handleChange}
-                    options={caseCode}
+                    options={voltage}
                 />
                 <Select
                     name = "capacitance"

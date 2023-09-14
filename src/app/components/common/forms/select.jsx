@@ -4,8 +4,11 @@ const Select = ({ label, name, value, defaultOption, onChange, options }) => {
 
     const handleChange = ({ target }) => {
         onChange({ name: target.name, value: target.value });
-        console.log("name: ", target.name, "value: ", target.value);
-        console.log("options: ", options);
+        console.log("name: ", target.label, "value: ", target.value);
+        // target.name - название поля в "inputData"
+        // target.value - значение value, полученное из "options"
+        // из "options" считывается свойство "value", но свойство "name" не отрабатывает,
+        // возможно его нужно озаглавить как "label", но это не точно.
     };
 
     const optionsArray =
@@ -31,8 +34,8 @@ const Select = ({ label, name, value, defaultOption, onChange, options }) => {
                 </option>
                 {optionsArray.length > 0 &&
                     optionsArray.map((option) => (
-                        <option  key={option.name} value={option.name}>
-                            {option.value}
+                        <option value={option.value} key={option.value}>
+                            {option.label}
                         </option>
                     ))}
             </select>
