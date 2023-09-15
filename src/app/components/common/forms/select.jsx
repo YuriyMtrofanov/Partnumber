@@ -1,14 +1,9 @@
-import React from 'react';
+import React from "react";
 
 const Select = ({ label, name, value, defaultOption, onChange, options }) => {
 
     const handleChange = ({ target }) => {
         onChange({ name: target.name, value: target.value });
-        console.log("name: ", target.label, "value: ", target.value);
-        // target.name - название поля в "inputData"
-        // target.value - значение value, полученное из "options"
-        // из "options" считывается свойство "value", но свойство "name" не отрабатывает,
-        // возможно его нужно озаглавить как "label", но это не точно.
     };
 
     const optionsArray =
@@ -17,13 +12,13 @@ const Select = ({ label, name, value, defaultOption, onChange, options }) => {
             : options;
 
     return (
-        <div className='col-2 text-center'>
+        <div className="col-lg-2 col-sm-6">
             <label
                 htmlFor={name}
                 className="text-secondary text-center"
             >{label}</label>
             <select
-                className="select"
+                className="select border bg-light"
                 id={name}
                 name={name}
                 value={value}
